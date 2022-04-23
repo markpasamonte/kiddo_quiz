@@ -14,30 +14,46 @@ body {
   height: 60px;
   color: white;
   padding: 20px;
-  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17),
-    inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15),
-    inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
   text-align: center;
   cursor: pointer;
 }
 
-.cart {
-  margin: 25px 100px;
-  float: right;
-  border: 1px solid #d8d8d8;
-  padding: 30px 30px;
-  background-color: white;
-  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
+.put-on {
+  background-color: #39495c;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-left: 580px;
+  width: 160px;
+  height: 60px;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
 }
-
-.color-circle {
+.student{
+  width: 30%;
+  margin-left: 10px;
+}
+.crayon-box {
+  background-image: url("images/crayonbox.png");
+  background-size: 250px;
+  width: 180px;
+  height: 320px;
+  float: right;
+  margin-right: 40px;
+  margin-top: 1100px;
+  border: 1px solid #d8d8d8;
+  padding: 10px 30px;
+}
+.logo{
+  font-size: 24px;
+}
+.box-palette {
   width: 50px;
   height: 50px;
   margin-top: 8px;
+  margin-left: 80px;
   border: 2px solid #d8d8d8;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 
@@ -59,9 +75,6 @@ img {
   width: 70%;
   margin: 40px;
   padding: 15px;
-  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
 }
 
 input {
@@ -80,12 +93,20 @@ li {
 }
 
 .nav-bar {
-  background: linear-gradient(-90deg, #84cf6a, #16c0b0);
+  background: #964B00;
   height: 60px;
   margin-bottom: 25px;
-  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-img{
+  float: left;
+  position: relative;
+  width: 230px;
+  height: 70px;
+  border: 0px solid;
+  margin-top: -20px;
 }
 
 .out-of-stock-img {
@@ -96,7 +117,7 @@ p {
   font-size: 22px;
 }
 
-.product-display {
+.draw-display {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -108,9 +129,17 @@ p {
   flex-wrap: wrap;
 }
 
-.product-image,
-.product-info {
+.drawing-image{
+  width: 100%;
+}
+.crayons-image{
+  width: 100%;
+  margin-left: 520px;
+
+}
+.game-info {
   width: 50%;
+  text-align: center;
 }
 
 .review-form {
@@ -121,8 +150,6 @@ p {
   margin: 40px;
   border: 2px solid #d8d8d8;
   background-color: white;
-  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
   box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
 }
 
@@ -130,9 +157,6 @@ p {
   width: 425px;
   padding: 20px;
   background-color: white;
-  -webkit-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
-  box-shadow: 2px 20px -12px rgba(0, 0, 0, 0.57);
   margin-left: 40px;
   border: 2px solid #d8d8d8;
 }
@@ -170,9 +194,9 @@ ul {
     flex-direction: column;
   }
 
-  .product-image,
-  .product-info {
-    margin-left: 10px;
+  .drawing-image,
+  .game-info {
+    margin-left: 30px;
     width: 100%;
   }
 

@@ -2,29 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Vue Mastery</title>
-    <!-- Import Styles -->
+    <title>Kiddo's Playground</title>
+
     <link rel="stylesheet" href="./assets/styles.css" />
-    <!-- Import Vue.js -->
+
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
   </head>
   <body>
-    <div id="app">
-      <div class="nav-bar"></div>
 
-      <div class="cart">Cart({{ cart.length }})</div>
-      <product-display :premium="premium" @add-to-cart="updateCart"></product-display>
+    <div id="app">
+      <div class="nav-bar">
+        <img class="logo-img" src="./assets/images/logo.png">
+      </div>
+      <div>
+        <input class="student" placeholder="Name:">
+      </div>
+      <div>
+        <input class="student" placeholder="Section:">
+      </div>
+
+
+      <div class="crayon-box">{{ cart.length }}</div>
+
+      <draw-display @add-to-cart="updateCart"></draw-display>
     </div>
 
-    <!-- Import App -->
+
     <script src="./main.js"></script>
 
-    <!-- Import Components -->
-    <script src="./components/ProductDisplay.js"></script>
-    <script src="./components/ReviewForm.js"></script>
-    <script src="./components/ReviewList.js"></script>
+    <script src="components/DrawDisplay.js"></script>
+    <script src="components/CommentBox.js"></script>
+    <script src="components/CommentList.js"></script>
 
-    <!-- Mount App -->
     <script>
       const mountedApp = app.mount('#app')
     </script>

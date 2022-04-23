@@ -1,4 +1,4 @@
-app.component('review-list', {
+app.component('comment-list', {
   props: {
     reviews: {
       type: Array,
@@ -9,16 +9,16 @@ app.component('review-list', {
   /*html*/
   `
   <div class="review-container">
-  <h3>Reviews:</h3>
+  <h3>Scores:</h3>
     <ul>
       <li v-for="(review, index) in reviews" :key="index">
         {{ review.name }} gave this {{ review.rating }} stars
         <br/>
         "{{ review.review }}"
         <br/>
-        <!-- solution -->
+
         Recommended: {{ review.recommend }}
-        <!-- solution -->
+     
       </li>
     </ul>
   </div>
