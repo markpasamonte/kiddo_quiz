@@ -4,7 +4,7 @@ app.component('comment-box', {
   `<form class="review-form" @submit.prevent="onSubmit">
     <h3>Score Board</h3>
     
-    <label for="rating">Rating:</label>
+    <label for="rating">Score:</label>
     <select id="rating" v-model.number="rating">
       <option>5</option>
       <option>4</option>

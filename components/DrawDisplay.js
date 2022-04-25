@@ -60,14 +60,22 @@ app.component('draw-display', {
         </div>
         
         <div class="crayons-image">
+        <p> BONUS QUESTION</p>
         <img v-bind:src="image1">
         </div>
+        
+        <div class="">
         <button 
           class="put-on"  
           v-on:click="addToCart">
           Put to Box
         </button>
-      
+        <button 
+          class="put-on"  style="margin-right: -600px; margin-top: -400px;" 
+          v-on:click="removeToCart">
+          Remove to Box
+        </button>
+        </div>
         
       </div>
     </div>
@@ -106,6 +114,9 @@ app.component('draw-display', {
   methods: {
       addToCart() {
           this.$emit('add-to-cart', this.variants[this.selectedVariant].id)
+      },
+      removeToCart() {
+          this.$emit('remove-to-cart', this.variants[this.selectedVariant].id)
       },
       updateVariant(index) {
           this.selectedVariant = index
